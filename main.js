@@ -23,6 +23,7 @@ portfolioData.forEach(function(portfolioObject) {
   portfolios.push(new Portfolio(portfolioObject));
 });
 
-portfoliosforEach(function(portfolio){
+portfolioData.forEach(function(portfolio){
   $('.portfolio').append(portfolio.toHtml());
 });
+;
