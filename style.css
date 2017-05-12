@@ -1,0 +1,17 @@
+/*reset*/
+
+.icons {
+  font-size: 10em;
+}
+#hamburger {
+  float: right;
+}
+img {
+  width: 100%;
+}
+@media only screen and (min-width: 640px) {
+  .nav-menu li {
+    display: none;
+  }
+
+}
