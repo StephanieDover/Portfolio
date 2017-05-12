@@ -13,15 +13,16 @@
       <nav class="nav-menu">
         <ul>
           <i class="fa fa-bars fa-3x" aria-hidden="true" id="hamburger"></i></li>
-          <li id="home">Home</li>
-          <li id="about">About</li>
+          <li class="tab" data-home="home"><a href="#">Home</a></li>
+          <li class="tab" data-about="about"><a href="#">About</a></li>
           <li><a href="https://www.linkedin.com/in/stephaniedover/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://github.com/StephanieDover"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://medium.com/@doverstephaniem"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
     </header>
-    <main>
+    <main class="app">
+      <div id="home" class="tab-content">
       <section class="devicons"></span>
         <span class="icons" id="js">&#xe64f</span>
         <span class="icons" id ="jquery">&#xe650</span>
@@ -36,8 +37,9 @@
   </p>
     </figure>
 </section>
-    </main>
-    </div>
+</div>
+<div id="about" class="tab-content">about</div>
+</main>
     <script src="main.js"></script>
     <script src="portfolio.js"></script>
   </body>
