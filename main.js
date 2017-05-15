@@ -2,28 +2,22 @@
 
 var portfolios = [];
 
-function Portfolio() {
+function Portfolio(portfolioData) {
   this.title = portfolioData.title;
-  this.imageURL = portfolioData.siteImageURL;
+  this.imageURL = portfolioData.siteImageUrl;
   this.siteURL = portfolioData.siteURL;
-  this.descritpion = portfolioData.about;
+  this.description = portfolioData.about;
 }
 Portfolio.prototype.toHtml = function() {
-  var $newPortfolio = $('figure.portfolio-item').clone();
-  $newArticle.removeClass('portfolio-item');
-  $newArticle.find('.site-title').html(this.title);
-  $newArticle.find('.img-url').html(this.imgURL);
-  $newArticle.find('.site-url').attr('datetime', this.siteURL);
-  $newArticle.find('.site-about').attr('title', this.descritpion);
-  $newArticle.append('<section>');
-  return $newArticle;
+  var template = $('.portfolio-template').html();
+  var templateRender = Handlebars.compile(template);
+  return templateRender(this);
 };
 
 portfolioData.forEach(function(portfolioObject) {
   portfolios.push(new Portfolio(portfolioObject));
 });
 
-portfolioData.forEach(function(portfolio){
+portfolios.forEach(function(portfolio){
   $('.portfolio').append(portfolio.toHtml());
 });
-;
