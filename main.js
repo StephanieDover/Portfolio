@@ -6,12 +6,12 @@ function Portfolio(portfolioData) {
   this.title = portfolioData.title;
   this.imageURL = portfolioData.siteImageUrl;
   this.siteURL = portfolioData.siteURL;
-  this.descritpion = portfolioData.about;
+  this.description = portfolioData.about;
 }
 Portfolio.prototype.toHtml = function() {
-  var template = Handlebars.compile($('.portfolio-template').text());
-  console.log(template(this));
-  return template(this);
+  var template = $('.portfolio-template').html();
+  var templateRender = Handlebars.compile(template);
+  return templateRender(this);
 };
 
 portfolioData.forEach(function(portfolioObject) {
@@ -21,4 +21,3 @@ portfolioData.forEach(function(portfolioObject) {
 portfolios.forEach(function(portfolio){
   $('.portfolio').append(portfolio.toHtml());
 });
-;
