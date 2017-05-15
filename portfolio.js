@@ -1,13 +1,11 @@
 'use strict';
 
-var portfolios = [];
-
 var portfolioData = [
 {
-  title: 'Wine Fellows',
-  siteURL: 'https://axelmichael11.github.io/Wine_Fellows/',
-  siteImageUrl: 'img/wine-fellows.png',
-  about: '<p>Bus Mall is a user research app built to help a new company decide with projects to sell. The test user is given three choices and they select the item they are most likly to purchase. After 25 selections, charts are shown which the marketing team can use to analyze thier products.</p>'
+  title:'Wine Fellows',
+  siteURL:'https://axelmichael11.github.io/Wine_Fellows/',
+  siteImageUrl:'img/wine-fellows.png',
+  about:'<p>Bus Mall is a user research app built to help a new company decide with projects to sell. The test user is given three choices and they select the item they are most likly to purchase. After 25 selections, charts are shown which the marketing team can use to analyze thier products.</p>'
 },
 {
   title: 'Bus Mall',

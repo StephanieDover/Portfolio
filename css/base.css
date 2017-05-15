@@ -1,0 +1,17 @@
+/*reset*/
+
+.icons {
+  font-size: 5em;
+}
+img {
+  width: 100%;
+}
+.nav-menu li {
+  display: none;
+}
+.tab{
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+}
