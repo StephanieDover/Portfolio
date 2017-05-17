@@ -10,16 +10,19 @@
   </head>
   <body>
     <header>
-      <nav calss="nav-menu">
+      <nav class="nav-menu">
         <ul>
-          <li><i class="fa fa-bars fa-3x" aria-hidden="true" id="hamburger"></i></li>
+          <i class="fa fa-bars fa-3x" aria-hidden="true" id="hamburger"></i></li>
+          <li class="tab" data-home="home"><a href="#">Home</a></li>
+          <li class="tab" data-about="about"><a href="#">About</a></li>
           <li><a href="https://www.linkedin.com/in/stephaniedover/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://github.com/StephanieDover"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://medium.com/@doverstephaniem"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
     </header>
-    <main>
+    <main class="app">
+      <div id="home" class="tab-content">
       <section class="devicons"></span>
         <span class="icons" id="js">&#xe64f</span>
         <span class="icons" id ="jquery">&#xe650</span>
@@ -28,20 +31,16 @@
       </section>
 <section class="portfolio">
   <figure class="portfolio-item">
-  <div class="site-image">
-
-  </div>
-  <div class="site-description">
-
-  </div>
-  <div class="colaborators">
-
-  </div>
+  <a href="#" class="site-url"><img class="img-url"/></a>
+  <p class="site-title"><p>
+  <p class="site-about">
+  </p>
     </figure>
 </section>
-    </main>
-    </div>
-    <script src="main.js"></script>
+</div>
+<div id="about" class="tab-content">about</div>
+</main>
     <script src="portfolio.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

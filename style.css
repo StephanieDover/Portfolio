@@ -1,7 +1,7 @@
 /*reset*/
 
 .icons {
-  font-size: 10em;
+  font-size: 5em;
 }
 #hamburger {
   float: right;
@@ -9,9 +9,22 @@
 img {
   width: 100%;
 }
+.nav-menu li {
+  display: none;
+}
+.tab{
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 640px) {
   .nav-menu li {
+    display: inline-block;
+    margin-left: 3em;
+  }
+  #hamburger {
     display: none;
   }
-
 }
