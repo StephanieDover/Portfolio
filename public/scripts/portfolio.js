@@ -1,7 +1,5 @@
 'use strict';
 
-const portfolios = [];
-
 function Portfolio(portfolioData) {
   this.title = portfolioData.title;
   this.imageURL = portfolioData.siteImageUrl;
@@ -29,11 +27,11 @@ Portfolio.fetchAll = function() {
     data = JSON.parse(localStorage.rawData);
   } else {
     console.log('else');
-      $.getJSON('data/blog.json', (result) => {
-        data = result
-        console.log(data);
-        localStorage.rawData = JSON.stringify(data);
-      })
+    $.getJSON('data/blog.json', (result) => {
+      data = result
+      console.log(data);
+      localStorage.rawData = JSON.stringify(data);
+    })
   }
   loadPage(data);
 }
