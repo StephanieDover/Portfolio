@@ -3,7 +3,24 @@
 #hamburger {
   float: right;
 }
-
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+p {
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+}
+.read-on {
+  padding-left: 10em;
+}
+.nav-menu {
+  position: relative;
+  padding-left: 20em;
+}
 @media only screen and (min-width: 640px) {
   .nav-menu li {
     display: inline-block;
@@ -11,5 +28,13 @@
   }
   #hamburger {
     display: none;
+  }
+  #portfolio {
+    width: 33%;
+    display: inline;
+  }
+  img {
+    width: 30%;
+    height: auto;
   }
 }
