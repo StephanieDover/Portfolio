@@ -1,0 +1,25 @@
+{
+  "name": "stephanie-dover-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieDover/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Stephanie Dover",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieDover/Portfolio/issues"
+  },
+  "homepage": "https://github.com/StephanieDover/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1"
+  }
+}
