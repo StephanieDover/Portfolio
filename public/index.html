@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Stephanie Dover</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/module.css">
-    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/devicons-master/css/devicons.css">
+<head>
+  <meta charset="utf-8">
+  <title>Stephanie Dover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/module.css">
+  <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendor/devicons-master/css/devicons.css">
 
-    <script id="portfolio-template" type="text/x-handlebars-template">
-     <article class="clearfix" id="portfolio">
-       <header>
-         <h1>{{title}}</h1>
-       </header>
-        <figure>
-           <a href="{{siteURL}}"><img src="{{imageURL}}"/></a>
-         </figure>
-       <section class="about">{{{description}}}</section>
-       <!--COMMENT: Consider dropping the 'Read on' feature unless you plan to get really descriptive with the projects. Also they just navigate to the top of the page right now.-->
-       <a href="#" class="read-on">Read on &rarr;</a>
-     </article>
-   </script>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-menu">
-        <ul>
-            <i class="fa fa-bars fa-3x" aria-hidden="true" id="hamburger"></i>
-            <li class="tab" data-home="home"><a href="#">Home</a></li>
-            <li class="tab" data-about="about"><a href="#">About</a></li>
-            <li><a href="https://www.linkedin.com/in/stephaniedover/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/StephanieDover"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://medium.com/@doverstephaniem"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
-          </ul>
+  <script id="portfolio-template" type="text/x-handlebars-template">
+    <article class="clearfix" id="portfolio">
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+      <figure>
+        <a href="{{siteURL}}"><img src="{{imageURL}}"/></a>
+      </figure>
+      <section class="about">{{{description}}}</section>
+    </article>
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav-menu">
+      <ul>
+        <i class="fa fa-bars fa-3x" aria-hidden="true" id="hamburger"></i>
+        <li class="tab" data-home="home"><a href="#">Home</a></li>
+        <li class="tab" data-about="about"><a href="#">About</a></li>
+        <li><a href="https://www.linkedin.com/in/stephaniedover/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/StephanieDover"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="https://medium.com/@doverstephaniem"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
+      </ul>
     </nav>
-    </header>
-    <main class="app">
-      <div id="home" class="tab-content">
+  </header>
+  <main class="app">
+    <div id="home" class="tab-content">
       <section class="devicons"></span>
         <span class="icons" id="js">&#xe64f</span>
         <span class="icons" id ="jquery">&#xe650</span>
         <span class="icons" id="html5">&#xe636</span>
         <span class="icons" id="css3">&#xe649</span>
       </section>
- <!--COMMENT: the indentation here is a little confusing-->
-<section class="portfolio"></section>
-</div>
-<div id="about" class="tab-content">about</div>
-</main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="scripts/portfolio.js"></script>
-    <script>Portfolio.fetchAll();</script>
-  </body>
+      <section class="portfolio"></section>
+    </div>
+    <div id="about" class="tab-content">about</div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="scripts/portfolio.js"></script>
+  <script>Portfolio.fetchAll();</script>
+</body>
 </html>
