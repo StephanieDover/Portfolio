@@ -8,7 +8,6 @@ const app = express();
 
 app.use(express.static('./public'))
 
-
 app.post('/index', bodyParser, function(request, response) {
 
   console.log(request.body);
@@ -17,5 +16,5 @@ app.post('/index', bodyParser, function(request, response) {
 
 app.listen(PORT, function() {
 
-  console.log(`Portfolio is on port ${PORT}');
+  console.log(`Portfolio is on port ${PORT}`);
 });
