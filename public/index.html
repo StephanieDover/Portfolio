@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/module.css">
   <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="vendor/devicons-master/css/devicons.css">
+   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   </script>
   <script id="portfolio-template" type="text/x-handlebars-template">
     <article class="clearfix" id="portfolio">
@@ -46,11 +47,16 @@
         <h1 id="name"></h1>
       <section class="portfolio"></section>
     </div>
-    <div id="about" class="tab-content">about</div>
+    <div id="about" class="tab-content">
+      <h1>About Me</h1>
+      <p>Bacon ipsum dolor amet drumstick landjaeger tail corned beef ball tip brisket flank boudin capicola filet mignon spare ribs fatback prosciutto pork. Turkey shank kevin short loin tail spare ribs tongue t-bone pork loin sirloin pancetta. Sausage shankle prosciutto cow, frankfurter jerky kielbasa. Brisket bresaola cupim jerky venison sausage corned beef tenderloin chicken strip steak.</p>
+    </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script src="scripts/portfolio.js"></script>
-  <script>Portfolio.fetchAll();</script>
+  <script src="scripts/views/portfolio.js"></script>
+  <script src="scripts/controllers/portfolioController.js"></script>
+  <script src="scripts/controllers/aboutController.js"></script>
+  <script src="/scripts/controllers/routes.js"></script>
 </body>
 </html>

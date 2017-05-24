@@ -37,6 +37,7 @@ function Portfolio(portfolioData) {
     loadPage(data);
     module.Protfolio = Portfolio;
   }
+  app.portfolio.fetchAll();
 })(app)
 
 function name(names) {
