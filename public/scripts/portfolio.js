@@ -38,3 +38,9 @@ function Portfolio(portfolioData) {
     module.Protfolio = Portfolio;
   }
 })(app)
+
+function name(names) {
+  names = [['s'],['t'],['e'],['p'],['h'],['a'],['n'],['i'],['e'],[' '],['d'],['o'],['v'],['e'],['r']].reduce((acc,cur) => acc.concat(cur), []).join('').toUpperCase();
+  return names
+}
+$('#name').text(name());
