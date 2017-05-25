@@ -22,7 +22,6 @@ var app = app || {};
     data.forEach((portfolio) => {
       let inst = (new Portfolio(portfolio));
       $('.portfolio').append(inst.toHtml());
-      console.log(inst);
     });
   }
 
@@ -32,10 +31,8 @@ var app = app || {};
       data = JSON.parse(localStorage.portfolioData);
       loadPage(data);
     } else {
-      console.log('else');
       $.getJSON('data/blog.json', (result) => {
         data = result
-        console.log(data);
         loadPage(data);
         localStorage.portfolioData = JSON.stringify(data);
       })
