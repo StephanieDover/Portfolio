@@ -6,7 +6,6 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.init = function() {
-    console.log('about');
     $('.tab-content').hide();
     $('#about').fadeIn(350);
     app.repos.requestRepos(app.repoView.index);
