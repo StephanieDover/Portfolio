@@ -21,17 +21,16 @@ const loadPage = function (data) {
   });
 }
 
-//I stiil had hackerIpsom stored at localStorage.rawData on my machine. It showed up in place of your projects until I cleared localStorage. It was super weird. So maybe name it somehting else like blogData? I don't know. It seems like more of a problem on my end than yours.
 Portfolio.fetchAll = function() {
   let data;
-  if (localStorage.getItem('rawData')) {
-    data = JSON.parse(localStorage.rawData);
+  if (localStorage.getItem('portfolioData')) {
+    data = JSON.parse(localStorage.portfolioData);
   } else {
     console.log('else');
     $.getJSON('data/blog.json', (result) => {
       data = result
       console.log(data);
-      localStorage.rawData = JSON.stringify(data);
+      localStorage.portfolioData = JSON.stringify(data);
     })
   }
   loadPage(data);
