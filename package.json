@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/StephanieDover/Portfolio#readme",
   "dependencies": {
-    "body-parser": "^1.17.1"
+    "body-parser": "^1.17.1",
+    "express-request-proxy": "^2.0.0",
+    "pg": "^6.2.3"
   },
   "devDependencies": {}
 }

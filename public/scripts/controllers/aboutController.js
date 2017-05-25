@@ -9,6 +9,7 @@ var app = app || {};
     console.log('about');
     $('.tab-content').hide();
     $('#about').fadeIn(350);
+    app.repos.requestRepos(app.repoView.index);
   }
 
   module.aboutController = aboutController;

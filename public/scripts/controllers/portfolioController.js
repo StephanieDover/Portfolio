@@ -8,7 +8,9 @@ var app = app || {};
   portfolioController.init = function() {
     console.log('articles');
     $('.tab-content').hide();
-    $('.portfolio').fadeIn(350);
+    $('#home').fadeIn(350);
+    console.log(app);
+    app.Portfolio.fetchAll();
   }
 
   module.portfolioController = portfolioController;
