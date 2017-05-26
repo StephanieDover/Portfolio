@@ -12,7 +12,6 @@ client.on('error', err => console.error(err));
 app.use(express.static('./public'))
 
 app.post('/index', bodyParser, function(request, response) {
-
   console.log(request.body);
   response.send('Record posted to server!!');
 })
@@ -29,3 +28,4 @@ function proxyGitHub(request, response) {
   }))(request, response);
 }
 app.get('/github/*', proxyGitHub);
+app.get('*', (request, response) => response.sendFile('index.html', {root: './public'}));
