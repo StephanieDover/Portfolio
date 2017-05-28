@@ -46,3 +46,14 @@ function name(names) {
   return names
 }
 $('#name').text(name());
+
+$('#hamburger').on('click', function () {
+  $('#hamburger').css('display', 'none');
+  $('#x').css('display', 'inline-block');
+  $('.nav-menu li').slideToggle();
+})
+$('#x').on('click', function () {
+  $('#x').css('display', 'none');
+  $('#hamburger').css('display', 'inline-block');
+  $('.nav-menu li').slideToggle();
+})
