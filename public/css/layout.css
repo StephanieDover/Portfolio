@@ -27,6 +27,7 @@ h1 {
 }
 .openBurger {
   display: block;
+  padding: 1em;
 }
 .nav-menu li {
   list-style: none;
@@ -37,6 +38,9 @@ h1 {
     margin-left: 3em;
   }
   #hamburger {
+    display: none;
+  }
+  #x {
     display: none;
   }
   #portfolio {
