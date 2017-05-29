@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="css/module.css">
   <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="vendor/devicons-master/css/devicons.css">
-   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  </script>
-  <script id="portfolio-template" type="text/x-handlebars-template">
-    <article class="clearfix" id="portfolio">
-      <header>
-        <h1>{{title}}</h1>
-      </header>
-      <figure>
-        <a href="{{siteURL}}"><img src="{{imageURL}}"/></a>
-      </figure>
-      <section class="about">{{{description}}}</section>
-    </article>
-  </script>
-  <script id="repo-template" type="text/x-handlebars-template">
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+</script>
+<script id="portfolio-template" type="text/x-handlebars-template">
+  <article class="clearfix" id="portfolio">
+    <header>
+      <h1>{{title}}</h1>
+    </header>
+    <figure>
+      <a href="{{siteURL}}"><img src="{{imageURL}}"/></a>
+    </figure>
+    <section class="about">{{{description}}}</section>
+  </article>
+</script>
+<script id="repo-template" type="text/x-handlebars-template">
   <li>
     <a href="{{html_url}}" target="_blank">
       <h3>{{name}}</h3>
@@ -54,15 +54,15 @@
         <span class="icons" id="html5">&#xe636</span>
         <span class="icons" id="css3">&#xe649</span>
       </section>
-        <h1 id="name"></h1>
+      <h1 id="name"></h1>
       <section class="portfolio"></section>
     </div>
     <div id="about" class="tab-content">
       <h1>About Me</h1>
       <p>Bacon ipsum dolor amet drumstick landjaeger tail corned beef ball tip brisket flank boudin capicola filet mignon spare ribs fatback prosciutto pork. Turkey shank kevin short loin tail spare ribs tongue t-bone pork loin sirloin pancetta. Sausage shankle prosciutto cow, frankfurter jerky kielbasa. Brisket bresaola cupim jerky venison sausage corned beef tenderloin chicken strip steak.</p>
       <h2>My GitHub Repos</h2>
-    <ul class="repos"></ul>
-  </div>
+      <ul class="repos"></ul>
+    </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
